@@ -1,0 +1,294 @@
+/*====GENERAL STYLES====*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+.locations,
+.program,
+.gifts,
+.q_a,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+/*====HEADER STYLES====*/
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+.text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text {
+  background: hsla(100,0%,0%,.9);
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%, .9);
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.15rem;
+  color: #d2ba87;
+  text-align: center;
+  margin-bottom: 0;
+  }
+
+.tagline {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: .15rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: .15rem;
+  text-align: center;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  .text h1 {
+    font-size: 7rem;
+  }
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+/*====SECTION STYLES====*/
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.blurb img{
+  height: 7.5rem;
+}
+.blurb h3 {
+  font-weight: 700;
+}
+.blurb div {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 2px;
+}
+.blurb::after {
+  content: "";
+  display: block;
+  height: .18rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .blurb::after {
+    display: none;
+  }
+
+}
+
+/*====PROGRAM STYLES====*/
+
+.program {
+  width: 100vw;
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+.program-wrapper {
+  text-align: left;
+}
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+.program p{
+  font-style: italic;
+}
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+/*====GIFTS STYLES====*/
+
+.gift-wrapper img {
+  height: 7.5rem;
+}
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+/*====QUESTION AND ANSWER STYLES====*/
+
+.q_a {
+   width: 100%;
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+}
+.q_a p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.q {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.ans {
+  margin-bottom: 1.5rem;
+}
+.question-list::after {
+  content: "";
+  display: block;
+  height: .18rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.contact p {
+  margin-bottom: .8rem;
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 768px) {
+
+  .question-list {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-list::after {
+    display: none;
+  }
+
+  .question-list h3 {
+    text-align: left;
+  }
+
+}
+
+/*==== ====*/
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/*====FOOTER STYLES====*/
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #606060;
+  font-size: .875rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  display: table;
+}
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
